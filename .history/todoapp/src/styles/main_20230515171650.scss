@@ -1,0 +1,31 @@
+@import './reset.scss';
+@import '../components/atoms/mainTitle/mainTitle';
+@import '../components/organisms/formToDo/formToDo';
+@import '../components/organisms/footer/footer';
+@import "./variables";
+@import "./mixin";
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background {
+    background-color: #;
+    width: $mobile;
+    height: 100%;
+    @include big-mobile {
+        width: $big-mobile;
+    }
+
+    @include tablet {
+        width: $tablet;
+    }
+
+    @include laptop {
+        width: $laptop;
+    }
+
+    @include big-laptop{
+        width: $big-laptop;
+    }
+
+}

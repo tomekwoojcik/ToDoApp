@@ -1,0 +1,11 @@
+@import '../../atoms/formToDoRow/formToDoRow';
+@import '../../molecules/formToDoCarts/formToDoCarts';
+@import '../../atoms/checkElement/checkElement';
+@import '../../molecules/rowButtonCheck/rowButtonCheck';
+.formToDo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

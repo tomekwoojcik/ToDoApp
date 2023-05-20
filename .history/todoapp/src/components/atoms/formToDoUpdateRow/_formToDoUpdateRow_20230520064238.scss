@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+.formToDo{
+    &__ButtonsRow{
+        .cancelButton{
+            height: 100%;           
+            background-color: $color-9;
+        }
+    }
+}

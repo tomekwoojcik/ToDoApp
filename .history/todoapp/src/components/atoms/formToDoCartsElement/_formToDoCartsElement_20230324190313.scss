@@ -1,0 +1,10 @@
+$paddingInCartsElement: 10px;
+
+.formToDo{
+    &__CartsElement{
+        width: calc(300px - $paddingInCartsElement);
+        height: 100%;
+        padding: $paddingInCartsElement;
+        background-color: #aeaeae20;
+    }
+}

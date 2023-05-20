@@ -1,0 +1,21 @@
+.formToDo {
+    &__Row {
+        width: 80%;
+        height: 65px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__Input {
+        width: 86%;
+        height: 52%;
+        border: none;
+    }
+    &__Arrow{
+        padding: ;
+        font-weight: bold;
+    }
+}

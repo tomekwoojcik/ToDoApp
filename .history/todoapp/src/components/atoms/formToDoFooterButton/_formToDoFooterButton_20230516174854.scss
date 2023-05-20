@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.formToDo {
+
+    &__iconDiv{
+        width: 40%;
+    }
+
+    &__footerButton {
+        background-color: $color-2;
+        width: 30%;
+        height: 30%;
+        padding: 0;
+        border: 0;
+        border-radius: 100%;
+    }
+
+    &__footerButton:nth-child(2),
+    &__footerButton:nth-child(3),
+    &__footerButton:nth-child(4) {
+        margin-left: 5px;
+    }
+
+    
+}

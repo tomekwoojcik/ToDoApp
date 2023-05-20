@@ -1,0 +1,17 @@
+@import './reset.scss';
+@import '../components/atoms/mainTitle/mainTitle';
+@import '../components/organisms/formToDo/formToDo';
+@import '../components/organisms/footer/footer';
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background {
+    background-color: #eaeaea;
+    width: 375px;
+}
+
+@media only screen and (min-width: 425px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 1024px) {}

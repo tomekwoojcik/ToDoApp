@@ -1,0 +1,12 @@
+.formToDo{
+    &__CheckList{
+        width: 85%;
+    }
+    &__CheckElement{
+        width: 85%;
+        height: 20%;
+        background-color: #aeaeae1f;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}

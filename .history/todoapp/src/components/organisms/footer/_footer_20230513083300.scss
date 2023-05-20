@@ -1,0 +1,30 @@
+@import "../../atoms/formToDoFooterButton/formToDoFooterButton";
+@import "../../../styles/variables";
+.formToDo {
+    &__footer {
+        margin: 20px auto 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        background-color: #aeaeae1f;
+
+        @include tablet {
+            height: 10rem;
+        }
+    }
+
+    &__rightParagraf {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+
+        @include tablet{
+            font-size: 1rem;
+        }
+    }
+
+
+}

@@ -1,0 +1,11 @@
+@import "../../atoms/formToDoFooterButton/formToDoFooterButton";
+
+.formToDo{
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,21 @@
+.formToDo {
+    &__RowButtonCheck {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__DeleteButton {
+        background-color: #d32f2f;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+    }
+
+        &__RestoreButton {
+            background-color: #d32f2f;
+            width: 0px;
+            height: 0px;
+            border-radius: 50%;
+        }
+}

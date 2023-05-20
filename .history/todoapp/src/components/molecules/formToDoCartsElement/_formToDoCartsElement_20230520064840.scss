@@ -1,0 +1,117 @@
+@import "../../../styles/variables";
+
+$paddingInCartsElement: 20px;
+
+.formToDo {
+    &__CartsElement {
+        width: calc(80% - $paddingInCartsElement);
+        height: 100%;
+        padding: $paddingInCartsElement;
+        background-color: $color-3;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            font-size: 1.5rem;
+        }
+
+        @include big-laptop {
+            justify-content: space-between;
+            width: 28%;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__CartsElement:nth-child(1n) {
+        margin-top: 10px;
+
+        @include tablet {
+            margin-left: 10px;
+        }
+
+        @include big-laptop {
+            margin-left: 10px;
+        }
+    }
+
+    &__RowButtons {
+        align-self: center;
+        margin-top: 10px;
+
+        @include tablet {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include big-laptop {
+            margin-top: 20px;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        .rowButton {
+            padding: 2.5px;
+            margin: 0 2.5px;
+            font-size: 10px;
+
+            @include tablet {
+                font-size: 1rem;
+            }
+
+            @include big-laptop {
+                font-size: 1.5rem;
+                justify-content: space-around;
+                margin-bottom: 10px;
+            }
+        }
+
+        .buttonIcon {
+            margin-right: 2px
+        }
+    }
+
+    &__UpdateCard {
+        background-color: $color-5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .updateInput {
+            border: none;
+        }
+
+        .buttonsRow {
+            display: flex;
+            flex-direction: row;
+
+            .buttonUpdate {
+                font-size: small;
+                padding: 5px;
+                color: $color-5;
+                border: 1px solid;
+
+                @include tablet {
+                        width: 30%;
+                        height: 15%;
+                    }
+            }
+
+            .cancelButton {
+                border-color: $color-9;
+                background-color: $color-9;
+            }
+
+            .checkButton {
+                border-color: $color-10;
+                background-color: $color-10;
+            }
+        }
+
+    }
+
+}

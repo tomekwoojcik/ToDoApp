@@ -1,0 +1,87 @@
+@import "../../../styles/variables";
+
+$paddingInCartsElement: 20px;
+
+.formToDo {
+    &__CartsElement {
+        width: calc(80% - $paddingInCartsElement);
+        height: 100%;
+        padding: $paddingInCartsElement;
+        background-color: #aeaeae1f;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__CartsElement:nth-child(1n) {
+        margin-top: 10px;
+        @include tablet{
+            margin-left: 10px;
+        }
+    }
+
+    &__RowButtons {
+        align-self: center;
+        margin-top: 10px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+        }
+
+        .rowButton {
+            padding: 2.5px;
+            margin: 0 2.5px;
+            font-size: 10px;
+        }
+
+        .buttonIcon {
+            size: small;
+            margin-right: 2px
+        }
+    }
+
+    &__UpdateCard {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .updateInput {
+            border: none;
+        }
+
+        .buttonsRow {
+            display: flex;
+            flex-direction: row;
+
+            .buttonUpdate {
+                font-size: small;
+                padding: 5px;
+                color: white;
+                border: 1px solid;
+            }
+
+            .cancelButton {
+                border-color: red;
+                background-color: red;
+            }
+
+            .checkButton {
+                border-color: green;
+                background-color: green;
+            }
+        }
+
+    }
+
+}

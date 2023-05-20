@@ -1,0 +1,15 @@
+$paddingInCartsElement: 10px;
+
+.formToDo {
+    &__CartsElement {
+        width: calc(300px - $paddingInCartsElement);
+        height: 100%;
+        padding: $paddingInCartsElement;
+        background-color: #aeaeae1f;
+    }
+
+    &__CartsElement:nth-child(2n) {
+        margin-top: 10px;
+    }
+
+}

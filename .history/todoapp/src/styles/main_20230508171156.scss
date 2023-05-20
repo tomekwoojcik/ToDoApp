@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import '../components/atoms/mainTitle/mainTitle';
+@import '../components/organisms/formToDo/formToDo';
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background {
+    background-color: #eaeaea;
+    width: 375px;
+
+}

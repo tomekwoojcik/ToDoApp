@@ -1,0 +1,22 @@
+$paddingInCartsElement: 20px;
+
+.formToDo {
+    &__CartsElement {
+        width: calc(300px - $paddingInCartsElement);
+        height: 100%;
+        padding: $paddingInCartsElement;
+        background-color: #aeaeae1f;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__CartsElement:nth-child(1n) {
+        margin-top: 10px;
+    }
+
+    &__RowButtons{
+        align-self: center;
+        margin-top: 10px;
+    }
+
+}

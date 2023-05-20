@@ -1,0 +1,63 @@
+@import './reset.scss';
+@import '../components/atoms/mainTitle/mainTitle';
+@import '../components/organisms/formToDo/formToDo';
+@import '../components/organisms/footer/footer';
+$big-mobile: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$big-laptop: 1440px;
+$four-k: 2560px;
+@mixin big-mobile {
+    @media only screen and (min-width: $big-mobile) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet) {
+        @content
+    }
+};
+
+@mixin laptop {
+    @media only screen and (min-width: $laptop) {
+        @content
+    }
+};
+
+@mixin big-laptop {
+    @media only screen and (min-width: $big-laptop) {
+        @content
+    }
+};
+
+@mixin four-k {
+    @media only screen and (min-width: $four-k) {
+        @content
+    }
+};
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background {
+    background-color: #eaeaea;
+    width: 375px;
+    height: 100vh;
+    @include big-mobile {
+        width: $big-mobile;
+    }
+
+    @include tablet {
+        width: $tablet;
+    }
+
+    @include laptop {
+        width: $laptop;
+    }
+
+    @include big-laptop{
+        width: $big-laptop;
+    }
+
+}

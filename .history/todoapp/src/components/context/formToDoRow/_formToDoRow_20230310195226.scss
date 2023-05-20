@@ -1,0 +1,20 @@
+.formToDo {
+    &__Row {
+        width: 80%;
+        height: 65px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        box-shadow: 0 -2px 1px rgb(0 0 0 / 3%)
+    }
+
+    &__Input {
+        width: 75%;
+        height: 52%;
+        border: none;
+    }
+}

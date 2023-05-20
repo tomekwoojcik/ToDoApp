@@ -1,0 +1,21 @@
+@import '../../molecules/formToDoCartsElement/formToDoCartsElement';
+@import '../../../styles/variables';
+
+.formToDo{
+    &__Carts{
+        width: 100%;
+        height: 100%;
+        color: black;
+        background-color: #;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

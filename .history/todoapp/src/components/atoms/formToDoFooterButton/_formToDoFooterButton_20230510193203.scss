@@ -1,0 +1,18 @@
+.formToDo {
+    &__footerButton {
+        background-color: #af2f2f26;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border: 0;
+        border-radius: 100%;
+    }
+
+    &__footerButton:nth-child(2),
+    &__footerButton:nth-child(3),
+    &__footerButton:nth-child(4) {
+        margin-left: 5px;
+    }
+
+    
+}
